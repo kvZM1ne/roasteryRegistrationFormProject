@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FormProject</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="auth">
+    <!-- left auth block (image) -->
+    <div class="auth__left">
+      <div class="auth__top">
+        <span class="auth__logo">Roastery.</span>
+      </div>
+
+      <div class="auth__hero">
+        <p class="auth__subtitle">FRESH BEANS MONTHLY</p>
+        <h2 class="auth__brand">Roastery.</h2>
+      </div>
+
+      <div class="auth__bottom">
+        <span class="auth__tagline">TASTE THE ORIGIN</span>
+      </div>
+    </div>
+    <!-- right auth block (form) -->
+    <div class="auth__right">
+      <h1 class="auth__title">Registration</h1>
+      <p class="auth__desc">JOIN THE COFFEE CLUB</p>
+
+      <form class="form" method="POST" action="#">
+        <div class="form__group">
+          <label class="form__label" for="userName">Name</label>
+          <input class="form__input" id="userName" name="name" type="text" placeholder="Mike Below" required>
+        </div>
+
+        <div class="form__group">
+          <label class="form__label" for="userEmail">Email</label>
+          <input class="form__input" id="userEmail" name="email" type="email" placeholder="user@mail.com" required>
+        </div>
+
+        <div class="form__group">
+          <span class="form__label">Gender</span>
+          <div class="form__radio-group">
+            <label class="radio">
+              <input type="radio" name="gender" value="male" checked>
+              Male
+            </label>
+
+            <label class="radio">
+              <input type="radio" name="gender" value="female">
+              Female
+            </label>
+
+            <label class="radio">
+              <input type="radio" name="gender" value="other">
+              Other
+            </label>
+          </div>
+        </div>
+
+        <div class="form__group">
+          <label class="form__label" for="userDOB">Date of birth</label>
+          <input class="form__input" id="userDOB" type="date" name="date" max="2012-01-01">
+        </div>
+
+        <div class="form__group">
+          <label class="form__label" for="userRegion">Country, City</label>
+          <input class="form__input" id="userRegion" name="region" type="text" placeholder="Belarus, Minsk" required>
+        </div>
+
+        <div class="form__group">
+          <span class="form__label">Subscription</span>
+          <div class="form__radio-group">
+            <label class="radio">
+              <input type="radio" name="subscription" value="250g">
+              250g
+            </label>
+
+            <label class="radio">
+              <input type="radio" name="subscription" value="500g" checked>
+              500g
+            </label>
+
+            <label class="radio">
+              <input type="radio" name="subscription" value="1kg">
+              1kg
+            </label>
+          </div>
+        </div>
+
+        <div class="form__agreement">
+          <label class="checkbox">
+            <input type="checkbox" name="terms" required>
+            <span>I agree to the <a href="#" class="checkbox__link">Coffee Club terms</a></span>
+          </label>
+        </div>
+
+        <div class="form__actions">
+          <button type="reset" class="btn btn--ghost">CANCEL</button>
+          <button type="submit" class="btn btn--primary">CONFIRM</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <footer class="footer">
+    <p class="footer__text">&copy; 2026 Roastery. All rights reserved.</p>
+  </footer>
+</body>
+</html>
